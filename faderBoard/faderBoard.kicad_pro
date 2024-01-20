@@ -518,8 +518,8 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
-      "vrml": ""
+      "step": "faderBoard.step",
+      "vrml": "faderBoard.wrl"
     },
     "page_layout_descr_file": ""
   },
