@@ -23,3 +23,5 @@ fp-info-cache
 *.net
 
 *.lck
+
+*/production/*
