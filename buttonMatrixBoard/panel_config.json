@@ -1,0 +1,11 @@
+{
+    "layout": {
+        "rows": "2"
+    },
+    "tabs": {
+        "type": "none"
+    },
+    "cuts": {
+        "type": "vcuts"
+    }
+}
