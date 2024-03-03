@@ -1998,7 +1998,7 @@
 
   (footprint "" (layer "F.Cu")
     (tstamp f7d0b12b-feae-4283-9db6-b1d6ff848cf5)
-    (at 4 1.5 -90)
+    (at 2.2 1.5 -90)
     (fp_text reference "" (at 0 0 90) (layer "F.SilkS")
         (effects (font (size 1.27 1.27) (thickness 0.15)))
       (tstamp c96029b9-b732-4d45-8fa2-f4000f60b8a5)
@@ -2007,7 +2007,7 @@
         (effects (font (size 1.27 1.27) (thickness 0.15)))
       (tstamp 809fee39-20c3-469e-90d4-ae800164404a)
     )
-    (pad "1" thru_hole custom (at 0 -2 270) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
+    (pad "1" thru_hole custom (at 0 -1.8 270) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 13 "GND") (pinfunction "Pin_1") (pintype "passive")
       (options (clearance outline) (anchor rect))
       (primitives
