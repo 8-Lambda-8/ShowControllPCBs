@@ -1,7 +1,8 @@
 #include <Arduino.h>
 
 class ButtonMatrix {
-typedef void (*fptr)(uint8_t i, bool state);
+  typedef void (*fptr)(uint8_t i, bool state);
+
  private:
   uint8_t* buttonSensePins;
   uint8_t* buttonPullPins;
@@ -15,6 +16,7 @@ typedef void (*fptr)(uint8_t i, bool state);
                uint8_t buttonPullCount);
 
   void loop();
+  void init();
 
   void valueChangedCallback(fptr cb);
 
