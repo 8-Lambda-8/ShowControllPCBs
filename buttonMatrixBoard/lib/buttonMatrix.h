@@ -4,8 +4,8 @@ class ButtonMatrix {
   typedef void (*fptr)(uint8_t i, bool state);
 
  private:
-  uint8_t* buttonSensePins;
-  uint8_t* buttonPullPins;
+  uint8_t* _buttonSensePins;
+  uint8_t* _buttonPullPins;
   bool* buttonArray;
   bool* buttonArrayLast;
 
