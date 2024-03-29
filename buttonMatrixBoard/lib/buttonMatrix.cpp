@@ -39,9 +39,8 @@ void ButtonMatrix::loop() {
   }
 
   for (size_t i = 0; i < _buttonSenseCount * _buttonPullCount; i++) {
-    //Serial.println(i);
     if (buttonArray[i] != buttonArrayLast[i]) {
-      callback(i, buttonArray[i]);
+      callback(i, !buttonArray[i]);
     }
   }
 }
