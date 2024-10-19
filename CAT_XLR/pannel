@@ -1,0 +1,13 @@
+{
+    "layout": {
+        "hspace": "2mm",
+        "cols": "3"
+    },
+    "tabs": {
+        "type": "annotation",
+        "fillet": "1mm"
+    },
+    "cuts": {
+        "type": "mousebites"
+    }
+}
