@@ -363,7 +363,7 @@
 				)
 			)
 		)
-		(symbol "Connector_Audio:XLR5"
+		(symbol "Connector_Audio:XLR5_Ground"
 			(pin_names hide)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -376,7 +376,7 @@
 					)
 				)
 			)
-			(property "Value" "XLR5"
+			(property "Value" "XLR5_Ground"
 				(at 0 6.35 0)
 				(effects
 					(font
@@ -402,7 +402,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "XLR Connector, Male or Female, 5 Pins"
+			(property "Description" "XLR Connector, Male or Female, 5 Pins, Discrete Ground Pin"
 				(at 0 0 0)
 				(effects
 					(font
@@ -429,7 +429,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "XLR5_0_1"
+			(symbol "XLR5_Ground_0_1"
 				(circle
 					(center -3.556 0)
 					(radius 1.016)
@@ -490,6 +490,18 @@
 				(polyline
 					(pts
 						(xy -4.572 -2.54) (xy -3.302 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -5.08) (xy -2.54 -4.445)
 					)
 					(stroke
 						(width 0)
@@ -626,7 +638,7 @@
 					)
 				)
 			)
-			(symbol "XLR5_1_1"
+			(symbol "XLR5_Ground_1_1"
 				(pin passive line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -710,6 +722,24 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -7.62 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -835,10 +865,16 @@
 		(uuid "169b9030-f879-44bb-be87-60cf6bb1dd28")
 	)
 	(junction
-		(at 63.5 121.92)
+		(at 63.5 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1f5bb9d3-a17b-4c1d-8bbe-9b8b5a3bcb89")
+		(uuid "21fc6ffe-05ba-4893-bb41-9ac6a23d9dc0")
+	)
+	(junction
+		(at 53.34 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "28f9738e-653f-469b-84b5-524ebc9bfc7a")
 	)
 	(junction
 		(at 55.88 142.24)
@@ -853,10 +889,34 @@
 		(uuid "3fef847b-9c82-4503-8d5b-359df77fa2a9")
 	)
 	(junction
+		(at 53.34 180.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "42695453-f1ed-4d29-9fe1-b626edb5984d")
+	)
+	(junction
+		(at 55.88 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a13bc04-608f-42cd-8ee4-0d248ac3f1a1")
+	)
+	(junction
+		(at 78.74 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6bbc5d11-c418-4abf-8b08-f681e8b64d80")
+	)
+	(junction
 		(at 53.34 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "777f617b-7f47-4c09-aaa5-5331bb54c4bb")
+	)
+	(junction
+		(at 63.5 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "956a0f0d-4803-4e59-9fce-feef69df4faf")
 	)
 	(junction
 		(at 53.34 88.9)
@@ -865,22 +925,22 @@
 		(uuid "9ca4cbe6-1696-44f4-a088-0557ffbe7265")
 	)
 	(junction
-		(at 53.34 177.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9dcb41f0-ff79-4126-a4c6-3a73a1b968ee")
-	)
-	(junction
 		(at 53.34 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9f015860-ebab-4c72-a41e-fd05806c28c9")
 	)
 	(junction
-		(at 63.5 172.72)
+		(at 53.34 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "abbf9748-16bf-4047-833c-584b8f6e7dda")
+		(uuid "9f6079db-1615-49b6-a21f-0b87f6acec55")
+	)
+	(junction
+		(at 53.34 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a8089ede-8379-436b-8a4b-32addfac465d")
 	)
 	(junction
 		(at 78.74 165.1)
@@ -895,22 +955,40 @@
 		(uuid "af56bf40-f26a-4af5-819c-54516ab2b96a")
 	)
 	(junction
-		(at 63.5 96.52)
+		(at 78.74 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b4a9c1da-f324-42f0-ba77-c264df947708")
+		(uuid "bfb26233-0af3-4448-a044-f0aac4a331e5")
 	)
 	(junction
-		(at 55.88 116.84)
+		(at 63.5 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bc186fd3-7914-4903-9192-26c1f0bc7964")
+		(uuid "d51209c7-ad66-4866-9039-eba9b9cdfa67")
 	)
 	(junction
-		(at 63.5 147.32)
+		(at 53.34 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d1574889-1cef-4f61-bebf-d5e5f9601c51")
+		(uuid "e27e102c-c6d1-4414-be38-1f12b34f7f28")
+	)
+	(junction
+		(at 63.5 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ea6cde4f-7e2a-4110-aea8-ad4f16091357")
+	)
+	(junction
+		(at 78.74 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed0132ee-8a18-49f7-b871-263ae3fc183d")
+	)
+	(junction
+		(at 78.74 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f382e230-e3f1-48e8-bd2a-adeac77a76ee")
 	)
 	(no_connect
 		(at 96.52 165.1)
@@ -978,13 +1056,33 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 167.64) (xy 55.88 175.26)
+			(xy 78.74 147.32) (xy 86.36 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0390caa4-629a-4d10-9f1f-2668a6dd55d4")
+	)
+	(wire
+		(pts
+			(xy 55.88 167.64) (xy 55.88 177.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "047cf5b3-56fc-4cdc-ab1f-a8a3291d9aab")
+	)
+	(wire
+		(pts
+			(xy 53.34 121.92) (xy 60.96 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04c7d5ce-c58b-40bd-8f1e-363e6a3385ea")
 	)
 	(wire
 		(pts
@@ -998,7 +1096,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 149.86) (xy 81.28 142.24)
+			(xy 81.28 152.4) (xy 81.28 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1008,13 +1106,43 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 96.52) (xy 63.5 96.52)
+			(xy 53.34 121.92) (xy 53.34 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10a83814-14db-499e-aaa7-771c3ac58780")
+	)
+	(wire
+		(pts
+			(xy 88.9 149.86) (xy 88.9 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "115a8611-150f-447a-9b21-831e911f9d9a")
+	)
+	(wire
+		(pts
+			(xy 50.8 99.06) (xy 63.5 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "12eac39d-46ca-463a-ad1c-aca336218e09")
+	)
+	(wire
+		(pts
+			(xy 50.8 116.84) (xy 55.88 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "131accf7-4ee0-4b1e-906b-166cece110c4")
 	)
 	(wire
 		(pts
@@ -1028,7 +1156,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 99.06) (xy 81.28 91.44)
+			(xy 81.28 101.6) (xy 81.28 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1038,17 +1166,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 116.84) (xy 55.88 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15bd55f0-8c6f-4360-897b-5819c82a6870")
-	)
-	(wire
-		(pts
-			(xy 53.34 177.8) (xy 78.74 177.8)
+			(xy 53.34 180.34) (xy 78.74 180.34)
 		)
 		(stroke
 			(width 0)
@@ -1058,7 +1176,17 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 114.3) (xy 78.74 88.9)
+			(xy 78.74 96.52) (xy 86.36 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18383812-362c-4887-81b9-d5fa587b1176")
+	)
+	(wire
+		(pts
+			(xy 78.74 114.3) (xy 78.74 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1068,17 +1196,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 116.84) (xy 55.88 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2241b5e9-58d0-401b-9917-2987f3217d59")
-	)
-	(wire
-		(pts
-			(xy 63.5 147.32) (xy 88.9 147.32)
+			(xy 63.5 149.86) (xy 88.9 149.86)
 		)
 		(stroke
 			(width 0)
@@ -1098,7 +1216,57 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 88.9) (xy 53.34 114.3)
+			(xy 63.5 124.46) (xy 63.5 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28122c8e-0c48-4869-83a4-7b30e1b5abcf")
+	)
+	(wire
+		(pts
+			(xy 78.74 96.52) (xy 78.74 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28869551-377f-477f-99f0-aea6b7024548")
+	)
+	(wire
+		(pts
+			(xy 81.28 116.84) (xy 81.28 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29ee050f-58d2-4b03-affd-68268ebd6620")
+	)
+	(wire
+		(pts
+			(xy 53.34 96.52) (xy 53.34 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c78946e-8c31-4ce2-ace9-2fdc3c8a9063")
+	)
+	(wire
+		(pts
+			(xy 78.74 121.92) (xy 78.74 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33132167-f0ba-4703-be66-b5cd52c2f227")
+	)
+	(wire
+		(pts
+			(xy 53.34 88.9) (xy 53.34 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1108,7 +1276,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 165.1) (xy 78.74 139.7)
+			(xy 78.74 165.1) (xy 78.74 147.32)
 		)
 		(stroke
 			(width 0)
@@ -1128,13 +1296,33 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 165.1) (xy 53.34 177.8)
+			(xy 63.5 175.26) (xy 63.5 172.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4d659267-910f-4b99-b65b-3f12bec9b694")
+		(uuid "46cc3c64-3808-48bf-8964-2e21805eaf85")
+	)
+	(wire
+		(pts
+			(xy 63.5 99.06) (xy 63.5 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5062eb31-007a-4f40-99d3-e073bb69fb59")
+	)
+	(wire
+		(pts
+			(xy 63.5 149.86) (xy 63.5 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50b70910-7544-49fd-b9ed-8b085e59f40c")
 	)
 	(wire
 		(pts
@@ -1148,6 +1336,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 172.72) (xy 53.34 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52d67f5e-3610-4e70-a302-6be330ee9590")
+	)
+	(wire
+		(pts
 			(xy 50.8 142.24) (xy 55.88 142.24)
 		)
 		(stroke
@@ -1155,16 +1353,6 @@
 			(type default)
 		)
 		(uuid "583c1f3a-417a-4254-8931-c92b5dfec5af")
-	)
-	(wire
-		(pts
-			(xy 55.88 124.46) (xy 81.28 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5dd37455-2cf6-4380-987f-c9df6c21c852")
 	)
 	(wire
 		(pts
@@ -1178,7 +1366,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 177.8) (xy 78.74 165.1)
+			(xy 78.74 180.34) (xy 78.74 172.72)
 		)
 		(stroke
 			(width 0)
@@ -1198,7 +1386,27 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 149.86) (xy 81.28 149.86)
+			(xy 78.74 172.72) (xy 78.74 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e4b8af8-cc82-429c-a4e4-61aa047bc4b6")
+	)
+	(wire
+		(pts
+			(xy 53.34 172.72) (xy 60.96 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71d6d40d-63bd-424c-a5ed-a03ad803681d")
+	)
+	(wire
+		(pts
+			(xy 55.88 152.4) (xy 81.28 152.4)
 		)
 		(stroke
 			(width 0)
@@ -1208,7 +1416,17 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 172.72) (xy 63.5 172.72)
+			(xy 53.34 147.32) (xy 53.34 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b064e98-5524-4f14-a3ac-a5a83159ee45")
+	)
+	(wire
+		(pts
+			(xy 50.8 175.26) (xy 63.5 175.26)
 		)
 		(stroke
 			(width 0)
@@ -1228,7 +1446,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 121.92) (xy 88.9 121.92)
+			(xy 63.5 124.46) (xy 88.9 124.46)
 		)
 		(stroke
 			(width 0)
@@ -1238,7 +1456,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 175.26) (xy 81.28 167.64)
+			(xy 81.28 177.8) (xy 81.28 167.64)
 		)
 		(stroke
 			(width 0)
@@ -1248,7 +1466,17 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 99.06) (xy 81.28 99.06)
+			(xy 88.9 99.06) (xy 88.9 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90bafe36-350d-4d81-b594-585afb248fa3")
+	)
+	(wire
+		(pts
+			(xy 55.88 101.6) (xy 81.28 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1258,7 +1486,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 114.3) (xy 53.34 139.7)
+			(xy 53.34 114.3) (xy 53.34 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1268,13 +1496,33 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 121.92) (xy 63.5 121.92)
+			(xy 53.34 96.52) (xy 60.96 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b22ac12-09a8-48c2-87c9-70a189d92729")
+	)
+	(wire
+		(pts
+			(xy 50.8 124.46) (xy 63.5 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9e7d1a92-165f-46a5-a1c8-7223d2b70cd2")
+	)
+	(wire
+		(pts
+			(xy 88.9 175.26) (xy 88.9 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3ca6e27-1a85-453a-9f1e-5f43220f781b")
 	)
 	(wire
 		(pts
@@ -1298,7 +1546,47 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 142.24) (xy 55.88 149.86)
+			(xy 53.34 165.1) (xy 53.34 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa73ebe7-62cd-4344-98d2-93be469c333d")
+	)
+	(wire
+		(pts
+			(xy 78.74 172.72) (xy 86.36 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af3d1784-586b-4ede-8e27-3885e8069dc5")
+	)
+	(wire
+		(pts
+			(xy 78.74 147.32) (xy 78.74 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b011e0a0-d9c7-495e-a4c3-e6a5027e93ec")
+	)
+	(wire
+		(pts
+			(xy 53.34 147.32) (xy 60.96 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b625daef-a4d4-43db-906a-bb0b0cfd6936")
+	)
+	(wire
+		(pts
+			(xy 55.88 142.24) (xy 55.88 152.4)
 		)
 		(stroke
 			(width 0)
@@ -1308,7 +1596,17 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 172.72) (xy 88.9 172.72)
+			(xy 78.74 121.92) (xy 86.36 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba802490-62a6-4e1a-9a0f-a43937fb1b30")
+	)
+	(wire
+		(pts
+			(xy 63.5 175.26) (xy 88.9 175.26)
 		)
 		(stroke
 			(width 0)
@@ -1318,7 +1616,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 139.7) (xy 53.34 165.1)
+			(xy 53.34 139.7) (xy 53.34 147.32)
 		)
 		(stroke
 			(width 0)
@@ -1348,7 +1646,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 147.32) (xy 63.5 147.32)
+			(xy 50.8 149.86) (xy 63.5 149.86)
 		)
 		(stroke
 			(width 0)
@@ -1358,17 +1656,27 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 124.46) (xy 81.28 116.84)
+			(xy 81.28 127) (xy 55.88 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e9861d03-c6a7-4419-8d5d-bed5d0a03856")
+		(uuid "ecd1fe82-e5c1-4ee8-b5d3-47f2236f44ea")
 	)
 	(wire
 		(pts
-			(xy 55.88 175.26) (xy 81.28 175.26)
+			(xy 55.88 127) (xy 55.88 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f35b453b-05de-4fd4-8bd1-f4b703cbfbf1")
+	)
+	(wire
+		(pts
+			(xy 55.88 177.8) (xy 81.28 177.8)
 		)
 		(stroke
 			(width 0)
@@ -1378,7 +1686,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 91.44) (xy 55.88 99.06)
+			(xy 55.88 91.44) (xy 55.88 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1388,7 +1696,17 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 96.52) (xy 88.9 96.52)
+			(xy 88.9 124.46) (xy 88.9 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa59e524-b246-4406-a570-80c2af98c68e")
+	)
+	(wire
+		(pts
+			(xy 63.5 99.06) (xy 88.9 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1398,7 +1716,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 139.7) (xy 78.74 114.3)
+			(xy 78.74 139.7) (xy 78.74 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1408,7 +1726,7 @@
 	)
 	(global_label "DATA+ 4"
 		(shape input)
-		(at 50.8 172.72 180)
+		(at 50.8 175.26 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1418,7 +1736,7 @@
 		)
 		(uuid "06998970-5add-4e45-93eb-5689b6fd94c2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.6505 172.72 0)
+			(at 39.6505 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1452,7 +1770,7 @@
 	)
 	(global_label "DATA- 2"
 		(shape input)
-		(at 62.23 49.53 270)
+		(at 67.31 49.53 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1460,9 +1778,9 @@
 			)
 			(justify right)
 		)
-		(uuid "13d44b3a-d688-440e-aec5-f05804b91915")
+		(uuid "246df7d7-ab04-474c-adae-5336608ef209")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.23 60.6795 90)
+			(at 67.31 60.6795 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1516,28 +1834,6 @@
 			)
 		)
 	)
-	(global_label "DATA- 3"
-		(shape input)
-		(at 67.31 49.53 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4888facf-3263-4df2-8ad9-a8eddd8f8f57")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 67.31 60.6795 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "DATA- 1"
 		(shape input)
 		(at 57.15 49.53 270)
@@ -1562,7 +1858,7 @@
 	)
 	(global_label "DATA+ 3"
 		(shape input)
-		(at 50.8 147.32 180)
+		(at 50.8 149.86 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1572,7 +1868,29 @@
 		)
 		(uuid "9e648d88-ab2a-4103-b56b-6ceaf591c7d1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.6505 147.32 0)
+			(at 39.6505 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DATA- 3"
+		(shape input)
+		(at 62.23 49.53 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9fae1111-5ce0-4e92-8697-58f45c057962")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 62.23 60.6795 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1650,7 +1968,7 @@
 	)
 	(global_label "DATA+ 1"
 		(shape input)
-		(at 50.8 96.52 180)
+		(at 50.8 99.06 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1660,7 +1978,7 @@
 		)
 		(uuid "c906f961-0923-47c9-a1d1-f69f86d5b4f1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.6505 96.52 0)
+			(at 39.6505 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1716,7 +2034,7 @@
 	)
 	(global_label "DATA+ 2"
 		(shape input)
-		(at 50.8 121.92 180)
+		(at 50.8 124.46 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1726,7 +2044,7 @@
 		)
 		(uuid "ef164d53-6d1b-4037-8e73-dd4b40cdc10f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.6505 121.92 0)
+			(at 39.6505 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1759,7 +2077,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:XLR5")
+		(lib_id "Connector_Audio:XLR5_Ground")
 		(at 88.9 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1802,7 +2120,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "XLR Connector, Male or Female, 5 Pins"
+		(property "Description" "XLR Connector, Male or Female, 5 Pins, Discrete Ground Pin"
 			(at 88.9 165.1 0)
 			(effects
 				(font
@@ -1826,6 +2144,9 @@
 		(pin "5"
 			(uuid "851e24d1-a76a-4691-bae1-9edf8c020b0c")
 		)
+		(pin "G"
+			(uuid "b94500f8-6a5e-488b-aef2-66db5fdf2487")
+		)
 		(instances
 			(project "CAT_XLR"
 				(path "/8c795102-f775-4110-9dfe-2675416fc408"
@@ -1836,7 +2157,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:XLR5")
+		(lib_id "Connector_Audio:XLR5_Ground")
 		(at 88.9 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1879,7 +2200,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "XLR Connector, Male or Female, 5 Pins"
+		(property "Description" "XLR Connector, Male or Female, 5 Pins, Discrete Ground Pin"
 			(at 88.9 114.3 0)
 			(effects
 				(font
@@ -1903,6 +2224,9 @@
 		(pin "5"
 			(uuid "7c611c03-0e7b-461d-9e31-5065a7858d24")
 		)
+		(pin "G"
+			(uuid "b07f4c36-0159-4c02-996a-684ec99475ca")
+		)
 		(instances
 			(project "CAT_XLR"
 				(path "/8c795102-f775-4110-9dfe-2675416fc408"
@@ -1913,7 +2237,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:XLR5")
+		(lib_id "Connector_Audio:XLR5_Ground")
 		(at 88.9 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1956,7 +2280,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "XLR Connector, Male or Female, 5 Pins"
+		(property "Description" "XLR Connector, Male or Female, 5 Pins, Discrete Ground Pin"
 			(at 88.9 139.7 0)
 			(effects
 				(font
@@ -1980,6 +2304,9 @@
 		(pin "5"
 			(uuid "1e0c6b1c-a065-43d9-bbd4-f973573fa022")
 		)
+		(pin "G"
+			(uuid "471dae29-f8f1-434d-ba19-90f6f723407d")
+		)
 		(instances
 			(project "CAT_XLR"
 				(path "/8c795102-f775-4110-9dfe-2675416fc408"
@@ -1991,7 +2318,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 53.34 177.8 0)
+		(at 53.34 180.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1999,7 +2326,7 @@
 		(dnp no)
 		(uuid "42425d03-5733-422b-a41e-3cfd8825324e")
 		(property "Reference" "#PWR01"
-			(at 53.34 184.15 0)
+			(at 53.34 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2008,7 +2335,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 49.022 179.324 0)
+			(at 49.022 181.864 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2016,7 +2343,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 177.8 0)
+			(at 53.34 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2025,7 +2352,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 177.8 0)
+			(at 53.34 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2034,7 +2361,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 53.34 177.8 0)
+			(at 53.34 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2146,7 +2473,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:XLR5")
+		(lib_id "Connector_Audio:XLR5_Ground")
 		(at 63.5 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2189,7 +2516,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "XLR Connector, Male or Female, 5 Pins"
+		(property "Description" "XLR Connector, Male or Female, 5 Pins, Discrete Ground Pin"
 			(at 63.5 88.9 0)
 			(effects
 				(font
@@ -2213,6 +2540,9 @@
 		(pin "5"
 			(uuid "d8f9c6d5-b615-46ad-b25f-778d0b8e51ce")
 		)
+		(pin "G"
+			(uuid "021e7e25-4a1a-454a-895d-229b703a0be1")
+		)
 		(instances
 			(project ""
 				(path "/8c795102-f775-4110-9dfe-2675416fc408"
@@ -2223,7 +2553,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:XLR5")
+		(lib_id "Connector_Audio:XLR5_Ground")
 		(at 63.5 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2266,7 +2596,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "XLR Connector, Male or Female, 5 Pins"
+		(property "Description" "XLR Connector, Male or Female, 5 Pins, Discrete Ground Pin"
 			(at 63.5 114.3 0)
 			(effects
 				(font
@@ -2290,6 +2620,9 @@
 		(pin "5"
 			(uuid "696087d4-e097-49f0-89de-e558d160ca2f")
 		)
+		(pin "G"
+			(uuid "88b4ed56-205a-456f-8ee4-2461f3d057aa")
+		)
 		(instances
 			(project "CAT_XLR"
 				(path "/8c795102-f775-4110-9dfe-2675416fc408"
@@ -2300,7 +2633,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:XLR5")
+		(lib_id "Connector_Audio:XLR5_Ground")
 		(at 63.5 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2343,7 +2676,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "XLR Connector, Male or Female, 5 Pins"
+		(property "Description" "XLR Connector, Male or Female, 5 Pins, Discrete Ground Pin"
 			(at 63.5 165.1 0)
 			(effects
 				(font
@@ -2367,6 +2700,9 @@
 		(pin "5"
 			(uuid "8e08676d-7de9-40a5-a9c5-c2e520766cca")
 		)
+		(pin "G"
+			(uuid "8d8fee19-d4df-4563-a4e3-9e66bd477098")
+		)
 		(instances
 			(project "CAT_XLR"
 				(path "/8c795102-f775-4110-9dfe-2675416fc408"
@@ -2377,7 +2713,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:XLR5")
+		(lib_id "Connector_Audio:XLR5_Ground")
 		(at 63.5 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2420,7 +2756,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "XLR Connector, Male or Female, 5 Pins"
+		(property "Description" "XLR Connector, Male or Female, 5 Pins, Discrete Ground Pin"
 			(at 63.5 139.7 0)
 			(effects
 				(font
@@ -2444,6 +2780,9 @@
 		(pin "5"
 			(uuid "fcbf349c-aeac-42c0-9e23-ada12b389d20")
 		)
+		(pin "G"
+			(uuid "bd32ea03-89d1-4275-8494-deab004ceca4")
+		)
 		(instances
 			(project "CAT_XLR"
 				(path "/8c795102-f775-4110-9dfe-2675416fc408"
@@ -2454,7 +2793,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:XLR5")
+		(lib_id "Connector_Audio:XLR5_Ground")
 		(at 88.9 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2497,7 +2836,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "XLR Connector, Male or Female, 5 Pins"
+		(property "Description" "XLR Connector, Male or Female, 5 Pins, Discrete Ground Pin"
 			(at 88.9 88.9 0)
 			(effects
 				(font
@@ -2520,6 +2859,9 @@
 		)
 		(pin "5"
 			(uuid "a37ace5a-9ce3-42d1-b474-7d58c6a94f10")
+		)
+		(pin "G"
+			(uuid "71f4f107-a479-4696-be8d-09188c116382")
 		)
 		(instances
 			(project "CAT_XLR"
